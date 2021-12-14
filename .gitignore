@@ -1,0 +1,5 @@
+#.gitignore
+*.csv
+.ipynb_checkpoints/
+.idea
+
