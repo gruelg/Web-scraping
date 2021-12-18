@@ -6,7 +6,7 @@ import argparse
 import pandas as pd
 
 parser = argparse.ArgumentParser()
-parser.add_argument("methode")
+parser.add_argument('--methode', dest='methode', type=str, help='methode', metavar='methode', default='scrapping')
 args = parser.parse_args()
 
 if args.methode == "scrapping":
@@ -14,7 +14,8 @@ if args.methode == "scrapping":
     jeux.getAllData()
     data = cleaning(jeux.listeJeux)
     data.cleaning()
-    dataframe = data.df 
+    dataframe = data.df
+    print(dataframe.dtypes) 
 
 if args.methode == "csv" :
     dataframe = pd.read_csv('dataframe.csv',sep=';')

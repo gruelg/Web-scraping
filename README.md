@@ -5,4 +5,3 @@ projet webScrapping consiste a récuérer toutes les informations d'un site de j
 Le site choisi pour ce projet est un site qui referencie les temps de jeu des jeux vidéo.
 
 les données extraites de tous les jeux présents sur la plateforme permet d'avoir la moyenne de la durée de vie de tous les jeux.
-
